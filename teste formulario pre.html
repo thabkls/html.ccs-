@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Escola Virtual - Pré-Matrícula</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        .checkbox-group, .radio-group {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Escola Virtual</h1>
+    <h2>Formulário de Pré-Matrícula</h2>
+
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+
+            <label for="nomeAluno">Nome do Aluno:</label>
+            <input type="text" id="nomeAluno" name="nomeAluno" required>
+
+            <label for="nascimento">Nascimento (dd/mm/aaaa):</label>
+            <input type="text" id="nascimento" name="nascimento" placeholder="dd/mm/aaaa" required>
+
+            <label for="nomeMae">Nome da Mãe:</label>
+            <input type="text" id="nomeMae" name="nomeMae" required>
+
+            <label for="nomePai">Nome do Pai:</label>
+            <input type="text" id="nomePai" name="nomePai">
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="ddd" name="ddd" placeholder="DDD" size="2">
+            <input type="text" id="telefone" name="telefone" placeholder="Telefone" size="10">
+            <input type="text" id="ramal" name="ramal" placeholder="Ramal" size="5">
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações de Matrícula:</legend>
+
+            <label for="serie">Série:</label>
+            <select id="serie" name="serie">
+                <option value="pre">pré-escolar</option>
+                <!-- outras opções podem ser adicionadas aqui -->
+            </select>
+
+            <div class="radio-group">
+                <label>Turno:</label>
+                <input type="radio" id="manha" name="turno" value="manha">
+                <label for="manha">Manhã</label>
+
+                <input type="radio" id="tarde" name="turno" value="tarde">
+                <label for="tarde">Tarde</label>
+            </div>
+
+            <div class="checkbox-group">
+                <label>Atividades Extracurriculares:</label>
+                <input type="checkbox" id="informatica" name="atividades" value="informatica">
+                <label for="informatica">Informática</label><br>
+
+                <input type="checkbox" id="musica" name="atividades" value="musica">
+                <label for="musica">Música</label><br>
+
+                <input type="checkbox" id="bale" name="atividades" value="bale">
+                <label for="bale">Balé</label><br>
+
+                <input type="checkbox" id="pintura" name="atividades" value="pintura">
+                <label for="pintura">Pintura</label><br>
+
+                <input type="checkbox" id="judo" name="atividades" value="judo">
+                <label for="judo">Judô</label><br>
+
+                <input type="checkbox" id="futebol" name="atividades" value="futebol">
+                <label for="futebol">Futebol</label>
+            </div>
+        </fieldset>
+
+        <button type="submit">Enviar

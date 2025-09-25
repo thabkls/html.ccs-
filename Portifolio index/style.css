@@ -1,0 +1,16 @@
+body {
+background: url(img/WhatsApp\ Image\ 2025-09-17\ at\ 19.18.22\ \(1\).jpeg) no-repeat right;
+background: size 40%;
+ background-color: rgb(124, 103, 188);
+color: azure;
+font-family: Quicksand;
+}
+
+span {
+    color: salmon;
+
+}
+
+.enfase {
+    font-weight: bolder;
+}
