@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Completo</title>
+</head>
+<body>
+    <h1>Formulário Completo</h1>
+
+    <form>
+        <!-- Dados Pessoais -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            Nome do Aluno: <input type="text" name="nomeAluno"><br><br>
+            Nascimento (dd/mm/aaaa): 
+            <input type="text" size="2" maxlength="2"> /
+            <input type="text" size="2" maxlength="2"> /
+            <input type="text" size="4" maxlength="4"><br><br>
+            Nome da Mãe: <input type="text" name="nomeMae"><br><br>
+            Nome do Pai: <input type="text" name="nomePai"><br><br>
+            Endereço: <input type="text" name="endereco"><br><br>
+            Cidade: <input type="text" name="cidade"><br><br>
+            Estado: 
+            <select name="estado">
+                <option>São Paulo</option>
+                <option>Rio de Janeiro</option>
+                <option>Minas Gerais</option>
+            </select><br><br>
+            Telefone: DDD (<input type="text" size="2" maxlength="2">)
+            Tel: <input type="text" size="9" maxlength="9">
+            Ramal: <input type="text" size="4" maxlength="4"><br><br>
+            E-Mail: <input type="email" name="email"><br><br>
+        </fieldset>
+
+        <!-- Informações de Matrícula -->
+        <fieldset>
+            <legend>Informações de Matrícula</legend>
+            Série:
+            <select name="serie">
+                <option value="pre">Pré-escolar</option>
+                <option value="1ano">1º Ano</option>
+                <option value="2ano">2º Ano</option>
+            </select><br><br>
+
+            Turno:<br>
+            <input type="radio" name="turno" value="manha"> Manhã<br>
+            <input type="radio" name="turno" value="tarde"> Tarde<br><br>
+
+            Atividades Extracurriculares:<br>
+            <input type="checkbox" name="atividades" value="informatica"> Informática<br>
+            <input type="checkbox" name="atividades" value="musica"> Música<br>
+            <input type="checkbox" name="atividades" value="bale"> Balé<br>
+            <input type="checkbox" name="atividades" value="pintura"> Pintura<br>
+            <input type="checkbox" name="atividades" value="judo"> Judô<br>
+            <input type="checkbox" name="atividades" value="futebol"> Futebol<br>
+        </fieldset>
+
+        <!-- Dados Profissionais -->
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            Natureza do Cargo:<br>
+            <input type="radio" name="cargo" value="gerencia"> Gerência
+            <input type="radio" name="cargo" value="financeiro"> Financeiro
+            <input type="radio" name="cargo" value="recepcao"> Recepção
+            <input type="radio" name="cargo" value="adm"> Administrativo
+            <input type="radio" name="cargo" value="juridico"> Jurídico<br><br>
+
+            Área de Interesse:<br>
+            <input type="checkbox" name="area" value="computacao"> Computação
+            <input type="checkbox" name="area" value="biologia"> Biologia
+            <input type="checkbox" name="area" value="meioAmbiente"> Meio Ambiente
+            <input type="checkbox" name="area" value="engenharia"> Engenharia
+            <input type="checkbox" name="area" value="historia"> História<br><br>
+
+            Mini-currículo:<br>
+            <textarea name="miniCurriculo" rows="5" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <!-- Botões -->
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
